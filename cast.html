@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Sets the default language -->
+
+<!-- The language of each page can be determined programmatically (web accessibility) -->
+
+	<head>
+
+		<meta charset="utf-8">
+		<!-- Set character encoding for the document -->
+
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- Display content in the highest mode available (Internet Explorer). Use if you want to support Internet Explorer prior to version 11 -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- The browser controls the page's dimensions and scaling -->
+
+		<!-- THESE THREE META TAGS MUST COME FIRST IN THE HEAD, see "https://github.com/joshbuchea/HEAD" -->
+
+		<meta name="description" content="Web App Development - Star Wars fan site">
+
+		<meta name="author" content="C1768263">
+		<!-- Student number -->
+
+		<title>Star Wars (film)</title>
+		<!-- Set the document's title -->
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Links to external CSS file -->
+
+	</head>
+
+	<body>
+
+	  	<header class="header">
+
+	  		<p id="intro" >A long time ago in a galaxy far, far away....</p>
+	  		<!-- From the opening crawl -->
+
+	    	<h1>Star Wars</h1>
+
+	  	</header>
+
+	  	<nav class="topnav">
+	  	<!-- Navigation bar -->
+
+		    <ul>
+		    <!-- Unordered list of hyperlinks -->
+
+		      <li><a href="mainPage.html">Home</a></li>
+
+		      <li><a href="aNewHope.html">A New Hope</a></li>
+
+		      <li class="drop">
+		      <!-- Dropdown menu -->
+
+		        <a href="javascript:void(0)" class="dropbtn">Storyline</a>
+
+		        <div class="drop-menu">
+
+		          <a href="storyline.html">Plot</a>
+		          <a href="storyline.html#video">1976 trailer</a>
+		          <!-- Links to #video on different page -->
+
+		        </div>
+		        <!-- Box appears when the user hovers over the "dropbtn" element -->
+
+		      </li>
+
+		      <li><a class="current" href="cast.html">Cast</a></li>
+		      
+		      <li class="about"><a href="#about">About</a></li>
+		      <!-- Five list items in total -->
+		    
+		    </ul>
+	  
+	  	</nav>
+
+	  	<main>
+
+		    <table>
+		    <!-- Create a table -->
+
+				<tr class="tableHeadings">
+				<!-- First row (headings) -->
+					<th>Headshot</th>
+					<th>Actor</th>
+				    <th>Role</th>
+				    <th class="born">Born</th>
+				    <th class="died">Died</th>
+				</tr>
+
+				<tr>
+				<!-- second row -->
+				    <td id="markHamill" class="profile"><img src="assets/markHamill.jpg" alt="Mark Hamill" class="headshot"></td>
+				    <!-- Credit: Photo by Steve Granitz - courtesy WireImage.com -->
+
+				    <!-- Provide text alternatives for non-text content (web accessibility) -->
+				    <td>Mark Hamill</td>
+				    <td>Luke Skywalker</td>
+				    <td class="born">Sep 25, 1951</td>
+				    <td class="died"></td>
+				</tr>
+
+				<tr>
+				<!-- third, etc. -->
+				    <td id="harrisonFord" class="profile"><img src="assets/harrisonFord.jpg" alt="Harrison Ford" class="headshot"></td>
+				    <!-- Credit: Photo by Theo Wargo - courtesy WireImage.com -->
+				    <td>Harrison Ford</td>
+				    <td>Han Solo</td>
+				    <td class="born">Jul 13, 1942</td>
+				    <td class="died"></td>
+				</tr>
+
+				<tr>
+				    <td id="carrieFisher" class="profile"><img src="assets/carrieFisher.jpg" alt="Carrie Fisher" class="headshot"></td>
+				    <!-- Credit: Robin Marchant - courtesy Getty Images -->
+				    <td>Carrie Fisher</td>
+				    <td>Princess Leia</td>
+				    <td class="born">Oct 21, 1956 </td>
+				    <td class="died">Dec 27, 2016 (age 60)</td>
+				</tr>
+
+				<tr>
+				    <td id="peterCushing" class="profile"><img src="assets/peterCushing.jpg" alt="Peter Cushing" class="headshot"></td>
+				    <!-- Credit: Photo by John Jay - courtesy mptvimages -->
+				    <td>Peter Cushing</td>
+				    <td>Grand Moff Tarkin</td>
+				    <td class="born">May 26, 1913</td>
+				    <td class="died">Aug 11, 1994 (age 81)</td>
+				</tr>
+
+				<tr>
+				    <td id="alecGuinness" class="profile"><img src="assets/alecGuinness.jpg" alt="Sir Alec Guinness" class="headshot"></td>
+				    <!-- Credit: MPTV - courtesy mptvimages -->
+
+				    <!-- This website includes other people's content and I do not own any copyrights. It's believed that the use of a few images (and a video) by myself, in the context of this piece of work, qualifies as fair use-->
+
+				    <!-- I *strongly* recommend that developers ask for permission when using other people's content and that they cite sources -->
+				    <td>Alec Guinness</td>
+				    <td>Obi-Wan Kenobi</td>
+				    <td class="born">Apr 2, 1914</td>
+				    <td class="died">Aug 5, 2000 (age 86)</td>
+				</tr>
+
+			</table>
+
+	  	</main>
+
+	  	<footer>
+
+	  		<p>C1768263</p>
+	  		<!-- Author -->
+		  
+		    <p>Contact us: <a href="mailto:johnDoe@example.com">johnDoe@example.com</a>.</p>
+		    <!-- Fake contact details (mailto link) -->
+
+		    <!-- Footers typically contain the author's details, copyright information, terms of use, etc. -->
+		  
+		</footer>	    
+    
+	</body>
+
+</html>

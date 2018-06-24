@@ -1,0 +1,336 @@
+@import url(https://fonts.googleapis.com/css?family=Proxima+Nova);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Merriweather)
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+/* import Google Web Fonts */
+
+* {                                             /* Width and height properties include content */
+    box-sizing: border-box;                     /* and padding and border */
+}
+
+body {                                          /* For body text, maximize legibility */
+    color: rgba(69, 88, 95, 1);                 /* not-too-dark text value with a little hue */
+    font-size: 20px;                            /* font-size much larger than you think necessary */
+    font-family: "Merriweather", serif;         /* lines should be no more than 45 characters long */
+    margin: 0;                                  /* make text readable and understandable (web accessibility) */
+    text-align: justify;
+}
+
+h1 {
+    font-size: 1.88em;                          /* For headlines, make them bold and easy to scan */
+    font-family: "Proxima Nova", sans-serif;    /* sans-serif typefaces are sharply defined */
+}                                               /* and easy to read at larger sizes */
+
+h2, th {
+    padding-left: 10px;
+    font-size: 1.50em;
+    font-family: "Montserrat", sans-serif;      /* I picked more than one typeface */
+}                                               /* with a little touch of whimsy */
+
+
+h3 {
+    font-size: 1.13em;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.header {                                       /* Style the header */
+    background-color: rgba(241, 241, 241, 1);   /* off-white background colour */
+    padding: 10px;
+    text-align: center;                         /* center text */
+}
+
+.topnav {                                       /* Style the nav bar */
+    overflow: hidden;
+}
+
+.topnav a {                                     /* Style nav links */
+    display: block;
+    color: rgba(255, 255, 255, 1);              /* white font colour */
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+
+.topnav a:hover {                               /* Change hover colour */
+    background-color: rgba(166, 175, 255, 1);   /* strong bluey accent colour */
+}
+
+.current {                                       /* same accent colour signifying you are here */
+    background-color: rgba(166, 175, 255, 1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;                                  /* Removes the gap between the header and nav */ 
+    padding: 0;                                 /* hsync */
+    overflow: hidden;
+    background-color: rgba(69, 88, 95, 1);      /* invert background and font colours */
+}
+
+li {
+    float: left;                                /* vsync */
+}
+
+li a, .dropbtn, .drop-menu a {
+    padding: 15px 10px;                         /* vsync */
+    text-decoration: none;
+}
+
+li.drop {
+    display: inline-block;
+}
+
+.drop-menu {                                /* Style menu */
+    display: none;
+    position: absolute;                         /* positioned relative to the nearest ancestor */
+    background-color: rgba(241, 241, 241, 1);
+    min-width: 115px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);   /* light grey shadow colour*/   
+    z-index: 1;                                 /* bring to the front */
+}                                               /* separating content: foreground, background (web accessibility) */
+
+.drop-menu a {
+    color: rgba(69, 88, 95, 1);
+    display: block;
+    text-align: left;
+}
+
+.drop-menu a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.drop:hover .drop-menu {
+    display: block;
+}
+
+li.about{
+    float:right;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    padding: 10px;
+    display: block;
+    width: 100%;                                /* Images will be responsive and scale up/down */
+    margin-left: auto;                          /* center images */
+    margin-right: auto; 
+    text-align: center;
+}
+
+@keyframes fade {                               /* Math: 100 ÷ animation duration = percentage for 1 second */ 
+    0% {
+        opacity: 0;
+    }
+
+    2.77% {                                     /* i.e. 100 ÷ 36 = 2.77 recurring */ 
+        opacity: 1;
+    }
+
+    8.33% {
+        opacity: 1;
+    }
+
+    11.11% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+} 
+
+.slideshow img {
+    position: absolute;                         /* Makes it so that the pictures occupy the same space */ 
+    opacity: 0;                                 /* starts the loop */
+    animation-name: fade; 
+    animation-duration: 36s;                    /* Math: (fade + visible) × (img no − 1) = delay. */
+    animation-iteration-count: infinite;        /* puts the slideshow on repeat */
+}                                               /* 3s should be enough time to look at each picture (web accessibility) */
+
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 3s; }
+.slideshow img:nth-child(3) { animation-delay: 6s; }
+.slideshow img:nth-child(4) { animation-delay: 9s; }
+.slideshow img:nth-child(5) { animation-delay: 12s; }
+.slideshow img:nth-child(6) { animation-delay: 15s; }
+.slideshow img:nth-child(7) { animation-delay: 18s; }
+.slideshow img:nth-child(8) { animation-delay: 21s; }
+.slideshow img:nth-child(9) { animation-delay: 24s; }
+.slideshow img:nth-child(10) { animation-delay: 27s; }
+.slideshow img:nth-child(11) { animation-delay: 30s; }
+.slideshow img:nth-child(12) { animation-delay: 33s; }
+/* SIMPLE CSS SLIDESHOW FROM SNOOK (lines 124-165), see "https://snook.ca/archives/html_and_css/simplest-css-slideshow" */
+
+/* NOTE CHANGES - NO OF IMAGES (ORIGINALLY 3)
+                  ANIMATION DURATION (TO ACCOUNT FOR EXTRA IMAGES)
+                  ADJUSTED KEYFRAMES (% FOR ONE SECOND)
+   CODE OMITTED REGARDING POSITION, HEIGHT, WIDTH, OUTLINE, ETC */
+
+img.figure {                                    /* Set max-width on mobile devices */
+    max-width: 91.66%
+}
+
+@media (min-width: 450px) {                     /* Content can be presented in different ways (web accessibility) */
+    .topnav a {                                 /* (re)style nav links */
+    padding: 15px 10px;
+    }
+}
+
+@media (max-width: 600px) {                     /* Reduce the space between lines in the header */
+    h1, h2, h3 {
+        margin: 0px;
+    }
+
+    #intro {                                    /* Removes the introduction to save space on small screens */
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .born, .died {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {                     /* Max-width on tablets and small laptops */
+    img.figure {
+        max-width: 68.75%
+    }
+}
+
+@media (max-width: 900px) {                     /* go-between for medium size devices */
+    h1, h2, h3 {
+        margin: 0px;
+    }
+
+    #aside {
+    padding: 8px 0 8px 0;                       /* vsync */
+    font-size: 21px;                            /* decrease font size with browser size*/
+    }
+
+    .sidebar {
+    font-size: 16px;
+    }
+}
+
+@media (min-width: 900px) {                     /* and desktop PCs */
+    img.figure {
+        max-width: 45.83%
+    }
+}
+
+@media (max-width: 1150px){                     /* Media query to help balance column length */
+    #starClothing {
+        display: none;
+    }
+}
+
+@media (min-width: 1151px){                     /* Note overlap */ 
+    #starRegistry, #atClothing {
+        display: none;
+    }
+}
+
+figcaption {                                    /* Center captions */
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+
+.row:after {                                    /* Clear floats */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {                                       /* Sets padding for *all* columns */
+    float: left;
+    padding: 10px;
+}
+
+.column.three, .column.six, .column.nine {      /* Sets columns one on the top the other for smaller devices (default) */
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .column.one { width: 8.33%; }
+    .column.two { width: 16.66%; }
+    .column.three { width: 25%; }
+    .column.four { width: 33.33%; }
+    .column.five { width: 41.66%; }
+    .column.six { width: 50%; }
+    .column.seven { width: 58.33%; }
+    .column.eight { width: 66.66%; }
+    .column.nine { width: 75%; }
+    .column.ten { width: 83.33%; }
+    .column.eleven { width: 91.66%; }
+    .column.twelve { width: 100%; }
+}
+
+/* ALL MEDIA QUERIES HERE (lines 177-273) */
+
+/* Originally designed for mobiles, with queries targeting medium and larger devices, 
+   extra breakpoints were added to change the layout and make the website responsive */
+
+p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+footer {                                        /* Styles the footer */
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar {
+    padding: 10px 0 10px 10px;                  /* vsync */
+}
+
+video {
+    display: block;
+    margin: auto;                               /* Center video */
+    width: 91.66%;                              /* size consistency */
+    height: 61.1%;                              /* maintain proportions and aspect ratio */
+}
+
+table {                                         /* Styles tables */
+    border-collapse: collapse;
+    font-size: 16px;                            
+    margin: auto;                               /* Center table */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 91.66%;
+}
+
+th, td {
+    border: 1px solid rgba(69, 88, 95, 0.62);
+    text-align: center;                         /* Center text */
+    padding: 8px;
+    width: 18.33%;
+}
+
+tr:nth-child(even) {                            /* Alternate background/text colours for rows: 2, 4, 6 etc.; */
+    background-color: rgba(69, 88, 95, 0.88);
+    color: rgba(241, 241, 241, 1);
+}
+
+td {
+    padding-left: 12px;
+}
+
+td.profile {                                    /* Removes unnecessary white space */
+    border: 0;
+    padding: 0;
+}
+
+img.headshot {                                  /* takes up as much space as possible in the table */
+    max-width: 100%;
+    padding: 0;
+
+}

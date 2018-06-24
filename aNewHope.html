@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Sets the default language -->
+
+<!-- The language of each page can be determined programmatically (web accessibility) -->
+
+	<head>
+
+		<meta charset="utf-8">
+		<!-- Set character encoding for the document -->
+
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- Display content in the highest mode available (Internet Explorer). Use if you want to support Internet Explorer prior to version 11 -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- The browser controls the page's dimensions and scaling -->
+
+		<!-- THESE THREE META TAGS MUST COME FIRST IN THE HEAD, see "https://github.com/joshbuchea/HEAD" -->
+
+		<meta name="description" content="Web App Development - Star Wars fan site">
+
+		<meta name="author" content="C1768263">
+		<!-- Student number -->
+
+		<title>Star Wars (film)</title>
+		<!-- Set the document's title -->
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Links to external CSS file -->
+
+	</head>
+
+	<body>
+
+	  	<header class="header">
+
+	  		<p id="intro" >A long time ago in a galaxy far, far away....</p>
+	  		<!-- From the opening crawl -->
+
+	    	<h1>Star Wars</h1>
+
+	  	</header>
+
+	  	<nav class="topnav">
+	  	<!-- Navigation bar -->
+
+		    <ul>
+		    <!-- Unordered list of hyperlinks -->
+
+		      <li><a href="mainPage.html">Home</a></li>
+
+		      <li><a class="current" href="aNewHope.html">A New Hope</a></li>
+
+		      <li class="drop">
+		      <!-- Dropdown menu -->
+
+		        <a href="javascript:void(0)" class="dropbtn">Storyline</a>
+		        <!-- DROPDOWN NAV FROM https://www.w3schools.com/css/css_dropdowns.asp (lines 55-70) -->
+
+		        <!-- NOTE CHANGES - NO OF LIST ITEMS 
+		        					NO OF DROPDOWN ITEMS
+		        					(THE ADDITION OF) A "CURRENT" LINK TO LET PEOPLE KNOW WHERE THEY ARE
+		        					AN ABOUT PAGE (FLOATED TO THE RIGHT, DEAD LINK) 
+		        					STYLING, see style.css-->
+
+		        <div class="drop-menu">
+
+		          <a href="storyline.html">Plot</a>
+		          <a href="storyline.html#video">1976 trailer</a>
+		          <!-- Links to #video on different page -->
+
+		        </div>
+		        <!-- Box appears when the user hovers over the "dropbtn" element -->
+
+		      </li>
+
+		      <li><a href="cast.html">Cast</a></li>
+		      
+		      <li class="about"><a href="#about">About</a></li>
+		      <!-- Five list items in total -->
+		    
+		    </ul>
+	  
+	  	</nav>
+
+	  	<main>
+
+			<section class="row">
+			<!-- Create a grid -->
+
+				<figure>
+				<!-- Image container -->
+
+			    	<img src="assets/fig1.jpg" alt="Star Wars logo" class="figure">
+			    	<!-- A central image (themed) -->
+
+			    	<!-- Provide text alternatives for non-text content (web accessibility) -->
+
+			    	<!-- Public domain image, see "https://commons.wikimedia.org/wiki/File:Star_Wars_Logo.svg" -->
+
+			    	<figcaption>Fig1. - Star Wars logo by Suzy Rice</figcaption>
+			    	<!-- Provide captions (web accessibility) -->
+
+		    	</figure>
+		    
+		      	<h2 class="heading">A New Hope</h2>
+		      	<!-- Main heading -->
+
+		      	<div class="row">
+		      	<!-- Text box -->
+
+		      		<div class="column six">
+		      		<!-- Create a column (width: 50%) -->
+
+		      		<!-- 12 column layout, because 12 is divisible by 2, 3, 4 and 6 -->
+
+		      		<!-- 1 column layout on mobile devices 2 columns on larger devices (media query), see "style.css" -->
+		    
+		        		<p><b>Star Wars</b> (later retitled <b>Star Wars: Episode IV – A New Hope</b>) is a 1977 American epic space opera written and directed by George Lucas. It is the first film in the original Star Wars trilogy, the first Star Wars movie in general, and the beginning of the Star Wars franchise. Starring <a href="cast.html#markHamill">Mark Hamill</a>, <a href="cast.html#harrisonFord">Harrison Ford</a>, <a href="cast.html#carrieFisher">Carrie Fisher</a>, <a href="cast.html#peterCushing">Peter Cushing</a> and <a href="cast.html#alecGuinness">Alec Guinness</a>, the plot focuses on the Rebel Alliance, led by Princess Leia (Fisher), and its attempt to destroy the Galactic Empire's space station, the Death Star. This conflict disrupts the isolated life of farmhand Luke Skywalker (Hamill), who inadvertently purchases two droids that possess stolen architectural plans for the Death Star. When the Empire begins a destructive search for the missing droids, Skywalker accompanies Jedi Master Obi-Wan Kenobi (Guinness) on a mission to return the plans to the Rebel Alliance and rescue Leia from the Death Star.</p>
+		        		<!-- hyperlinks provide ways to help users navigate, find content, and determine where they are (web accessibility) -->
+
+		        		<p id="starClothing">Star Wars was released in theatres in the U.S. on May 25, 1977. It made $461 million in the U.S. and $314 million abroad, totaling $775 million (that's over $3 billion in 2017, adjusted for inflation). It surpassed Jaws (1975) to become the highest-grossing film of all time until the release of E.T. the Extra-Terrestrial (1982). When adjusted for inflation, Star Wars is the second-highest-grossing film in North America, and the third-highest-grossing film ever. It received 10 Academy Award nominations (including Best Picture), winning seven. It was among the first films to be selected as part of the U.S. Library of Congress' National Film Registry. At the time, it was the most recent film on the registry and the only one chosen from the 1970s. Its soundtrack was added to the U.S. National Recording Registry in 2004. Today, it is often regarded as one of the most important films in the history of motion pictures. It launched an industry of tie-in products, including TV series spinoffs, novels, comic books, and video games, and merchandise including toys, games and clothing.</p>
+
+		        		<p id="starRegistry">Star Wars was released in theatres in the U.S. on May 25, 1977. It made $461 million in the U.S. and $314 million abroad, totaling $775 million (that's over $3 billion in 2017, adjusted for inflation). It surpassed Jaws (1975) to become the highest-grossing film of all time until the release of E.T. the Extra-Terrestrial (1982). When adjusted for inflation, Star Wars is the second-highest-grossing film in North America, and the third-highest-grossing film ever. It received 10 Academy Award nominations (including Best Picture), winning seven. It was among the first films to be selected as part of the U.S. Library of Congress' National Film Registry.</p>
+
+		      		</div>
+
+		      		<div class="column six">
+		      		<!-- two columns, stacked one on top of the other *or* side by side depending on browser size -->
+
+		      			<p id="atClothing">At the time, it was the most recent film on the registry and the only one chosen from the 1970s. Its soundtrack was added to the U.S. National Recording Registry in 2004. Today, it is often regarded as one of the most important films in the history of motion pictures. It launched an industry of tie-in products, including TV series spinoffs, novels, comic books, and video games, and merchandise including toys, games and clothing.</p>
+		      			<!-- Adding and removing "starClothing", "starRegistry" and "atClothing" <p> elements, depending on browser size, helps balance column length no matter which device people use-->
+
+		      			<figure>
+		      			<!-- Image container -->
+
+			        		<img src="assets/fig2.jpg" alt="This is a poster for Star Wars" class="figure">
+			        		<!-- Source: "http://www.impawards.com/1977/star_wars_ver2.html" -->
+
+			        		<figcaption>Fig2. - Theatrical release poster by Tom Jung. Credit: 20th Century Fox</figcaption>
+			        		<!-- Provide captions (web accessibility) -->
+
+		        		</figure>
+		    
+		        		<p>The film's success led to two critically and commercially successful sequels, <b>The Empire Strikes Back</b> in 1980 and <b>Return of the Jedi</b> in 1983. A direct prequel, <b>Rogue One</b>, was released in 2016.</p>
+		        		<!-- Star Wars films in bold (without any extra importance) -->
+
+		        		<!-- Text is available under Creative Commons from Wikipedia, the free encyclopedia -->
+
+		      		</div>
+
+		      	</div>
+		    
+		    </section>
+
+	    </main>
+
+	  	<footer>
+
+	  		<p>C1768263</p>
+	  		<!-- Author -->
+	  
+	    	<p>Contact us: <a href="mailto:johnDoe@example.com">johnDoe@example.com</a>.</p>
+	    	<!-- Fake contact details (mailto link) -->
+
+	    	<!-- Footers typically contain the author's details, copyright information, terms of use, etc. -->
+	  
+	  	</footer>	    
+    
+	</body>
+
+</html>

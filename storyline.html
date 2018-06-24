@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Sets the default language -->
+
+<!-- The language of each page can be determined programmatically (web accessibility) -->
+
+	<head>
+
+		<meta charset="utf-8">
+		<!-- Set character encoding for the document -->
+
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- Display content in the highest mode available (Internet Explorer). Use if you want to support Internet Explorer prior to version 11 -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- The browser controls the page's dimensions and scaling -->
+
+		<!-- THESE THREE META TAGS MUST COME FIRST IN THE HEAD, see "https://github.com/joshbuchea/HEAD" -->
+
+		<meta name="description" content="Web App Development - Star Wars fan site">
+
+		<meta name="author" content="C1768263">
+		<!-- Student number -->
+
+		<title>Star Wars (film)</title>
+		<!-- Set the document's title -->
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Links to external CSS file -->
+
+	</head>
+
+	<body>
+
+	  	<header class="header">
+
+	  		<p id="intro" >A long time ago in a galaxy far, far away....</p>
+	  		<!-- From the opening crawl -->
+
+	    	<h1>Star Wars</h1>
+
+	  	</header>
+
+	  	<nav class="topnav">
+	  	<!-- Navigation bar -->
+
+		    <ul>
+		    <!-- Unordered list of hyperlinks -->
+
+		      <li><a href="mainPage.html">Home</a></li>
+
+		      <li><a href="aNewHope.html">A New Hope</a></li>
+
+		      <li class="drop">
+		      <!-- Dropdown menu -->
+
+		        <a class="current dropbtn" href="javascript:void(0)">Storyline</a>
+
+		        <div class="drop-menu">
+
+		          <a href="storyline.html">Plot</a>
+		          <a href="storyline.html#video">1976 trailer</a>
+		          <!-- Links to #video on different page -->
+
+		        </div>
+		        <!-- Box appears when the user hovers over the "dropbtn" element -->
+
+		      </li>
+
+		      <li><a href="cast.html">Cast</a></li>
+		      
+		      <li class="about"><a href="#about">About</a></li>
+		      <!-- Five list items in total -->
+		    
+		    </ul>
+	  
+	  	</nav>
+
+	  	<main>
+
+		    <div class="row">
+		    <!-- Create a grid -->
+	    
+		    	<aside class="column three">
+		    	<!-- Column, related to the surrounding content, self-contained but also like a sidebar (width: 25%) -->
+		    
+		    		<h2 id="aside">Trivia</h2>
+		    		<!-- Side heading -->
+		    
+		      		<p class="sidebar">The first trailer hit cinemas six months before debut, with tag lines like <q>the story of a boy, a girl and a universe</q> and <q>a billion years in the making</q>. Executives hoped to drum up some interest in a film they had little faith in.</p>
+
+		      		<p class="sidebar">Made on a budget of $11m it made $215m in the US during release, and $337m overseas. The most recent film in the franchise, The Force Awakens, cost $306m to make and made over $2b at the Box Office.</p>
+
+		      		<p class="sidebar">The full title <b>Star Wars: Episode IV – A New Hope</b> first appeared when the film was re-released in 1981.</p>
+
+		      		<p class="sidebar">George Lucas originally had a $150,000 contract with Fox for writing and directing Star Wars. He cannily insisted on total control and 40% of merchandising, something the studio only agreed to because they had no idea what a phenomenon Star Wars would become.</p>
+
+		      		<p class="sidebar">The famous, and often imitated, opening crawl for Star Wars was co-written by Brian De Palma, director of Scarface.</p>
+
+		      		<p class="sidebar"><a href="cast.html#alecGuinness">Sir Alec Guinness</a> made a ton of money having recognised its potential and negotiated a deal for 2% of box office takings.</p>
+
+		      		<p class="sidebar">Kenny Baker (R2-D2) and Anthony Daniels (C-3PO) are the only actors credited with being in all seven Star Wars films.</p>
+
+		      		<p class="sidebar"><a href="cast.html#harrisonFord">Harrison Ford</a> was far from George Lucas' first choice to play Han Solo in Star Wars.</p>
+
+		      		<p class="sidebar">The original release date was set for Christmas 1976 but major delays pushed it back. Fox even threatened to close down production when filming over-ran by more than two weeks.</p>
+
+		      		<p class="sidebar">Composer John Williams won an Oscar for his score in Star Wars. The music was later named the greatest film score of all time.</p>
+
+		      		<p class="sidebar"><a href="cast.html#markHamill">Mark Hamill</a> (Luke Skywalker) was involved in a car crash during shooting. His face was injured making reshoots impossible. Hamill later said he only broke his nose and reports were wide of the mark.</p>
+		      		<!-- Text from http://news.bbc.co.uk/1/hi/6679425.stm -->
+		    
+		    	</aside>
+		    
+		    	<section class="column nine">
+		    	<!-- Create column (width: 75%) -->
+
+		      		<h2 class="heading" id="plot">Plot</h2>
+		      		<!-- Main heading -->
+
+		      		<div class="column six">
+		      		<!-- Splits this section 50-50 -->
+		    
+		      			<p>The galaxy is in the middle of a civil war. Spies working for the Rebel Alliance have stolen plans to the Galactic Empire's Death Star, a heavily armed space station capable of destroying entire planets. Rebel leader Princess Leia has the plans, but her ship is captured by the evil Darth Vader. Before she's captured, Leia hides the plans in the memory of a droid, R2-D2, along with recording. R2-D2 flees to the surface of nearby desert planet Tatooine with his friend C-3PO, also a droid.</p>
+
+		      			<figure>
+		      			<!-- Image container -->
+
+			      			<img src="assets/fig3.jpg" alt="Star Wars opening crawl">
+			      			<!-- This image is a screenshot from the 1977 film, and the copyright for it is most likely owned by Fox. It's believed that use of a *limited number* of *low-resolution* screenshots for *critical commentary and discussion* by non-profit organisations qualifies as fair use -->
+
+			      			<!-- Provide text alternatives for non-text content (web accessibility) -->
+
+			      			<figcaption>Fig3. - Princess Leia's ship is captured by Darth Vader. Credit: 20th Century Fox/LucasFilm</figcaption>
+			      			<!-- Provide captions (web accessibility) -->
+
+		      			</figure>
+
+		      			<p>The droids are captured by Jawas, who sell them to moisture farmers Owen and Beru Lars and their nephew Luke Skywalker. While cleaning R2-D2, Luke accidentally triggers Leia's message, in which she asks help from Obi-Wan Kenobi. The next morning, Luke finds R2-D2 searching for Obi-Wan, and meets Ben Kenobi, an old hermit who reveals himself to be Obi-Wan. Obi-Wan tells Luke of his days as a Jedi Knight, former Galactic peacekeepers with supernatural powers called The Force, who were all but wiped out by the Empire. Luke learns that his father fought alongside Obi-Wan as a Jedi Knight, and Obi-Wan tells Luke that Vader, his former pupil, turned to the dark side of the Force and killed his father. Obi-Wan then gives Luke his father's lightsaber.</p>
+
+		      			<p>Obi-Wan watches Leia's recording, in which she begs him to take the plans to her father on the planet Alderaan. Obi-Wan invites Luke to accompany him and learn the ways of the Force. Luke declines, but changes his mind after discovering that Imperial stormtroopers have burned down his house and killed his aunt and uncle.</p>
+
+		      		</div>
+
+		      		<div class="column six">
+		      		<!-- Second column -->
+
+		      			<p>Obi-Wan and Luke hire smuggler, Han Solo, and his first mate, Chewbacca, to fly to Alderaan on Han's ship, the Millennium Falcon.</p>
+		    
+		      			<p>Upon arrival at the planet Alderaan, they discover that the planet has been totally destroyed by the Death Star. The Falcon is captured by the Death Star's tractor beam and brought into its hangar bay. While Obi-Wan tries to disable the tractor beam, Luke discovers that Leia is being held on-board, and with help, rescues her. The group makes its way back to the Falcon. Obi-Wan disables the tractor beam, and, on the way back, fights with Vader. Once he's sure the others can escape, Obi-Wan allows himself to be killed. The Falcon escapes, unknowingly carrying a tracking device, which the Empire follows to the Rebels' base on Yavin IV.</p>
+
+		      			<figure>
+		      			<!-- Image container -->
+
+			      			<img src="assets/fig4.jpg" alt="Darth Vader vs Obi-Wan Kenobi">
+			      			<!-- see fig3. -->
+
+			      			<!-- Provide text alternatives for non-text content (web accessibility) -->
+
+			      			<figcaption>Fig4. - Obi-Wan fights with Vader. Credit: 20th Century Fox/LucasFilm</figcaption>
+			      			<!-- Provide captions (web accessibility) -->
+
+		      			</figure>
+
+		      			<p>The Rebels analyze the Death Star plans and identify a vulnerable exhaust port that connects to the station's main reactor. Luke joins the Rebel assault squad, while Han collects his payment and intends to leave, despite Luke's request that he stay and help. The Rebels suffer heavy losses after several unsuccessful attack runs, leaving Luke as one of the few surviving pilots. Vader leads a squadron of TIE fighters and prepares to attack Luke's X-wing fighter, but Han returns and fires at the Imperials. Guided by Obi-Wan's spirit, Luke uses the Force to destroy the Death Star seconds before it can fire. Back on Yavin, Leia awards Luke and Han with medals for their heroism.</p>
+		      			<!-- Text is available under Creative Commons from Wikipedia, the free encyclopedia -->
+
+		      		</div>
+		      		<!-- The following <video> element is in a new column, all by itself, width: 100% of its parent (width: 75%) -->
+
+		      		<figure>
+		      		<!-- Video container -->
+
+		      			<video src="assets/video.mp4" controls id="video">
+		      			<!-- This is a trailer for the 1977 film, and the copyright for it is most likely owned by Fox. Standard YouTube licence, see "https://www.youtube.com/watch?v=i-vsILeJ8_8" -->
+
+		      			<!-- The browser allows the user to control video playback -->
+
+		      				I'm sorry your browser does not support the video tag
+		      				<!-- This message will be displayed if the browser doesn't support embedded videos -->
+
+		      				<!-- don't worry, you can download it at http://www.davestrailerpage.co.uk/trailers_s.html and watch it with your favorite video player! -->
+		     
+		      			</video>
+
+		      			<figcaption>Fig5. - Original 1976 teaser trailer. Credit: 20th Century Fox/LucasFilm</figcaption>
+		      			<!-- Provide captions (web accessibility) -->
+
+		      		</figure>
+		    
+		    	</section>
+		  
+		  	</div>
+
+	  	</main>
+
+	  	<footer>
+
+	  		<p>C1768263</p>
+	  		<!-- Author -->
+		  
+		    <p>Contact us: <a href="mailto:johnDoe@example.com">johnDoe@example.com</a>.</p>
+		    <!-- Fake contact details (mailto link) -->
+
+		    <!-- Footers typically contain the author's details, copyright information, terms of use, etc. -->
+		  
+		</footer>	    
+    
+	</body>
+
+</html>
